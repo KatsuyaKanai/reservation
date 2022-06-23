@@ -1,0 +1,94 @@
+<body>
+
+<! --formタグはどうする？ -->
+
+ <header class="header">
+    <div class="header-inner">
+        <div class="header-left-nav">
+            <a href="/home/index">
+            <img alt="サイトのロゴ画像" src="https://presite-potepancamp-rails-02.herokuapp.com/assets/logo.png">
+            </a>
+            <form action="https://presite-potepancamp-rails-02.herokuapp.com/rooms/search" accept-chareset="UTF-8" method="get">
+            <div class="header-sharch d-lg-inline-block d-none">
+                <input type="text" name="area" id="area" value class="form-control" placeholder="エリア">
+                <i class="fas fa-map-market-alt"></i>
+            </div>
+            <div class="header-sharch d-lg-inline-block d-none">
+            <input type="text" name="keyword" id="keyword" value class="form-control" placeholder="キーワード"
+            <i class="fas fa-search"></i>
+            </div>
+            <input type="submit" name="commit" value class="d-none" data-disable-with>
+            </form>
+        </div>
+        <div class="header-right-nav">
+            <a class="btn btn-primary my-2 mx-3" href="/users/sign_in">ログイン</a>
+            <a class="btn btn-secondary" href="/users/sign_up">登録する</a>
+            </div>
+        </div>    
+ </header>
+ <div class="notifications"></div>
+ <div class="top">
+    <div class="top-main">
+        <div class="container">
+            <div class="row col-lg-6">
+                <div class="form-fream">
+                    <p class="form-area-title mb-4">Potepan Shareでまだ体験したことのない旅をしよう</p>
+                    <form action="https://presite-potepancamp-rails-02.herokuapp.com/rooms/search" accept-chareset="UTF-8" method="get">
+                        <label for="__">エリア</label>
+                        <input type="text" name="area" id="area" value class="form-control mb-4" placehoder="東京">
+                        <input type="submit" name="form-control btn-primary" mb-4 data-disable-with="探す">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="panel-area m-5">
+    <h1 class="section-title">おすすめのエリア</h1>
+    <div class="row">
+        <div class="panel-item col-lg-3 col-6">
+            <span>東京</span>
+            <a href="https://presite-potepancamp-rails-02.herokuapp.com/rooms/search?area=%E6%9D%B1%E4%BA%AC">
+            <img class="panel-image" src="https://presite-potepancamp-rails-02.herokuapp.com/assets/img_tokyo.jpg">
+            </a>
+                <div class="shadow"></div>
+        </div>
+        <div class="panel-item col-lg-3 col-6">
+            <span>大阪</span>
+            <a href="https://presite-potepancamp-rails-02.herokuapp.com/rooms/search?area=%E5%A4%A7%E9%98%AA">
+            <img class="panel-iamge" src="https://presite-potepancamp-rails-02.herokuapp.com/assets/img_osaka.jpg">
+            </a>
+                <div class="shadow"></div>
+        </div>
+        <div class="panel-item col-lg-3 col-6">
+            <span>京都</span>
+            <a href="https://presite-potepancamp-rails-02.herokuapp.com/rooms/search?area=%E4%BA%AC%E9%83%BD">
+            <img class="panel-iamge shadow" src="https://presite-potepancamp-rails-02.herokuapp.com/assets/img_kyoto.jpg">
+            </a>
+                <div class="shadow"</div>
+        </div>
+        <div class= "panel-item col-lg-3 col-6">
+            <span>札幌</span>
+            <a href="https://presite-potepancamp-rails-02.herokuapp.com/rooms/search?area=%E6%9C%AD%E5%B9%8C">
+            <img class="panel-image" src="https://presite-potepancamp-rails-02.herokuapp.com/assets/img_sapporo.jpg">
+            </a>
+                <div class="shadow"></div>
+        </div>
+    </div>
+ </div>
+</div>
+
+<footer class="footer">
+    <p>Copyright 2022 POTEPAN.INC</p>
+</footer>
+</body>
+
+
+
+
+
+
+
+
+
+
